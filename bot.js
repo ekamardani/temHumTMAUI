@@ -54,7 +54,7 @@ bot.start(async (ctx) => {
   await ctx.reply(
     'Buka Mini App untuk melihat dashboard:',
     Markup.inlineKeyboard([
-      Markup.button.webApp('🔍 Buka Dashboard', `https://your-vercel-app.vercel.app/?start=${encodeSettings(userId)}`)
+      Markup.button.webApp('🔍 Buka Dashboard', `https://kolam-monitoring.vercel.app/?start=${encodeSettings(userId)}`)
     ])
   );
 });
