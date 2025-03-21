@@ -1,0 +1,56 @@
+/* styles/Slider.module.css */
+.rangeSlider {
+  position: relative;
+  height: 6px;
+  width: 100%;
+}
+
+.sliderTrack {
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.sliderThumb {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+  z-index: 4;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  pointer-events: all;
+  background: transparent;
+}
+
+.sliderThumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+  margin-top: -7px;
+  pointer-events: all;
+  position: relative;
+}
+
+.sliderThumb::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+  border: none;
+  pointer-events: all;
+  position: relative;
+}
+
+.sliderThumbLeft {
+  z-index: 3;
+}
+
+.sliderThumbRight {
+  z-index: 4;
+}
